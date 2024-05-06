@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TEST</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
+    <link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet">
+    <script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
+</head>
+
+<body>
+    <section class="main__navbar navbar">
+        <div class="container">
+            <div class="header__top_inner">
+                <div class="header__top_logo logo">
+                    <img src="images/Circle (1).png" alt="sas">
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__nav_list">
+                        <li class="header__nav_item">
+                            <form action="main.html" target="_blank">
+                                <button class="header__nav_link" href="../main.html">Главная</button>
+                            </form>
+                        </li>
+                        <li class="header__nav_item">
+                            <div class="col">
+                                <div class="dropdown-container dropdown-bordered">
+                                    <div class="dropdown-toggle click-dropdown">
+                                        Сообщения
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a href="../messege.html">Написать сообщение</a></li>
+                                            <li><a href="#">Личные сообщения</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav_item">
+                            <div class="col">
+                                <div class="dropdown-container dropdown-bordered">
+                                    <div class="dropdown-toggle click-dropdown">
+                                        Профиль
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a href="#">Ваш профиль</a></li>
+                                            <li><a href="#">Ваши сообщения</a></li>
+                                            <li><a href="#">Ваши подписки</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav_item">
+                            <div class="col">
+                                <div class="dropdown-container dropdown-bordered">
+                                    <div class="dropdown-toggle click-dropdown">
+                                        Поддержка
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a href="../support.html">Поддержка</a></li>
+                                            <li><a href="../aboutUs.html">О нас</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav_item">
+                            <div class="col">
+                                <div class="dropdown-container dropdown-bordered">
+                                    <div class="dropdown-toggle click-dropdown">
+                                        ВИП
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a href="#">Пользователи и роли</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav_item">
+                            <img src="images/Line.png" alt="">
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__user_nav">
+                    <div class="header__top_call">
+                        <ul class="header__nav_list2">
+                            <li class="header__nav_call">
+                                <img src="images/Circle (1).png" alt="sas">
+                            </li>
+                            <li class="header__nav_logout">
+                                <a class="header__nav_logout2" href="../login.html">Выйти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="support">
+        <div class="support__main_top">Техническая поддержка</div>
+        <div class="support__main">
+            <div class="support__main_box">
+                <div class="support__main_box_top">
+                    <div class="support__main_box_top_img"></div>
+                    <p class="support__main_box_top_text">Частые вопросы:</p>
+                    <ul class="support__main_box_top_ul">
+                        <li>А почему?</li>
+                        <li>А почему?</li>
+                        <li>А почему?</li>
+                        <li>А почему?</li>
+                        <li>А почему?</li>
+                        <li>А почему?</li>
+                        <li>А почему?</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="support__main_form">
+                <div class="support__main_form_pole">
+                    <div class="support__main_form_text">Укажите тему обращения:</div>
+                    <form name="supForm">
+                    <input class="supportForm" type="text" placeholder="Укажите тему" />
+                </form>
+                </div>
+                <div class="support__main_form_pole">
+                    <div class="support__main_form_text">Укажите вашу почту:</div>
+                    <form name="temaForm">
+                    <input class="supportForm" type="text" placeholder="Укажите почту" />
+                </form>
+                </div>
+                <div class="support__main_form_pole">
+                    <div class="support__main_form_text">Текст сообщения:</div>
+                    <form name="temaForm">
+                    <textarea class="supportForm2" type="text"></textarea>
+                </form>
+                </div>
+
+                <div class="support__main_form_sogl">
+                    <form name="support__main_form_flag">
+                        <input class="support__main_form_flag1" type="checkbox" name="enabled" checked></form>
+                    Даю согласие на обработку своих персональных данных
+                </div>
+                <button class="support__main_form_btn">Отправить</button>
+            </div>
+
+            <div class="support__main_us">
+                <p class="support__main_us_top">О СЛУЖБЕ ПОДДЕРЖКИ</p>
+                <p class="support__main_us_bottom">
+                    Обращения обрабатываются по рабочим дням, с 9 до 19 по московскому времени.<br><br>
+
+                    Мы стараемся отвечать в течение 24 часов, но время может увеличиться, в зависимости от количества и
+                    сложности поступивших обращений. Если ответа долго нет, проверьте папку со спамом.<br><br>
+
+                    Излагайте суть обращения максимально осмысленно и подробно — это сократит количество уточняющих
+                    вопросов и поможет быстрее получить ответ.<br><br>
+
+                    Для отправки скриншота загрузите его на habrastorage.org и приложите к тексту прямую ссылку.<br><br>
+
+                    Перед обращением в службу поддержки попробуйте найти ответ на вопрос в справочном разделе.<br><br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__end">
+        <div class="end__color">
+            <div class="container">
+                <div class="end__main">
+                    <div class="end__left">
+                        <div class="end__left_text">Будте с нами</div>
+                        <div class="end__left_icons">
+                            <img src="images/Negative.png" alt="">
+                            <img src="images/Negative2.png" alt="">
+                            <img src="images/Negative3.png" alt="">
+                            <img src="images/Negative4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="end__right">
+                        <div class="end__right_elem">
+                            <div class="end__right_elem_top">Номер поддержки</div>
+                            <div class="end__right_elem_bottom">1800 265 24 52</div>
+                        </div>
+                        <div class="end__right_elem">
+                            <div class="end__right_elem_top">Адрес</div>
+                            <div class="end__right_elem_bottom"> г. Москва, Походный проезд, домовладение 3</div>
+                        </div>
+                        <div class="end__right_elem">
+                            <div class="end__right_elem_top">Мы открыты</div>
+                            <div class="end__right_elem_bottom">С понедельника по пятницу</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="end__dark">
+            <div class="end__logo"><img src="images/Circle (1).png" alt=""></div>
+            <nav class="end__nav">
+                <ul class="end__nav_list">
+                    <li class="end__nav_item">
+                        <a class="end__nav_link" href="#">На главную</a>
+                    </li>
+                    <li class="end__nav_item">
+                        <a class="end__nav_link" href="#">О нас</a>
+                    </li>
+                    <li class="end__nav_item">
+                        <a class="end__nav_link" href="#">Поддержка</a>
+                    </li>
+                    <li class="end__nav_item">
+                        <a class="end__nav_link" href="#">Блог</a>
+                    </li>
+                    <li class="end__nav_item">
+                        <a class="end__nav_link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
