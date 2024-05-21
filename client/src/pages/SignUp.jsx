@@ -1,5 +1,5 @@
 import { useForm, Controller } from "react-hook-form";
-import style from "./style.module.scss";
+import style from "../pages/css/style.module.scss";
 import { AuthContext } from "../context/AuthContext";
 import { useContext } from "react";
 import { yupResolver } from "@hookform/resolvers/yup";

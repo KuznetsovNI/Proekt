@@ -1,0 +1,263 @@
+$error-color: rgb(218, 0, 0);
+$border-color: rgb(189, 189, 189);
+$button-dark: rgb(43, 43, 43);
+
+/* ============================== GLOBAL ============================== */
+/* ============================== Blog-layout ============================== */
+
+.Layout {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.Layout__navbar {
+    display: flex;
+    width: 700px;
+    list-style-type: none;
+    margin-left: 620px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    border: 2px solid gray;
+    border-radius: 12px;
+    text-align: center;
+    align-items: center;
+}
+
+.Layout__navbar_button_text {
+    color: white;
+}
+
+.Layout__navbar_all {
+    margin-left: 20px;
+    padding-right: 10px;
+    border-left: 1px solid black;
+    padding-left: 10px;
+    white-space: nowrap;
+    transition: .3s;
+    color: #000000;
+}
+
+.Layout__navbar_all:hover {
+    color: red;
+}
+
+.Layout__navbar_item {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 20px;
+    white-space: nowrap;
+    transition: .3s;
+    color: #000000;
+}
+
+.Layout__navbar_item:hover {
+    color: red;
+}
+
+.Layout__navbar_item:last-child {
+    border-right: none;
+}
+
+/* ============================== GLOBAL ============================== */
+/* ============================== Blog-Home ============================== */
+.Home__container {
+    max-width: 1300px;
+    min-height: 900px;
+    padding: 20px 15px;
+    margin: 0 auto;
+}
+
+.Home__grid {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+/* ============================== GLOBAL ============================== */
+/* ============================== Blog-Create ============================== */
+
+.create {
+    max-width: 1000px;
+    min-height: 900px;
+    margin: 100px auto;
+    padding: 25px 25px 25px 25px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.create__title_form{
+    margin-bottom: 10px;
+}
+
+.create__main_title{
+    font-size: 26px;
+}
+
+.create__tag_form{
+    margin-bottom: 10px;
+}
+
+.create__main_tag{
+    font-size: 26px;
+}
+
+.create__img_form{
+    margin-bottom: 10px;
+}
+
+.create__main_img{
+    font-size: 26px;
+}
+
+.create__main_buttons{
+    display: flex;
+}
+
+.create__main_button1 {
+    width: 100px;
+    background-image: linear-gradient(to right, #000000 0%, #434343 51%, #000000 100%);
+    margin: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 15px;
+    display: block;
+}
+
+.create__main_button1:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.create__main_button2 {
+    background-image: linear-gradient(to right, #56ab2f 0%, #a8e063 51%, #56ab2f 100%);
+    margin: 10px;
+    padding: 10px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 15px;
+    display: block;
+}
+
+.create__main_button2:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ============================== GLOBAL ============================== */
+/* ============================== Blog-cards ============================== */
+
+.blogCards{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+.blogCard__img{
+    width: 300px;
+    height: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .create__main_button1 {
+//     margin-top: 20px;
+//     margin-left: 20px;
+//     background-color: $button-dark;
+//     border: 0;
+//     border-radius: 15px;
+//     box-sizing: border-box;
+//     color: #ffffff;
+//     cursor: pointer;
+//     font-weight: 600;
+//     outline: none;
+//     padding: 12px 24px;
+//     transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+//     will-change: transform;
+
+//     &:disabled {
+//       pointer-events: none;
+//     }
+
+//     &:hover {
+//       box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+//       transform: translateY(-2px);
+//     }
+
+//     &:active {
+//       box-shadow: none;
+//       transform: translateY(0);
+//     }
+//   }
+
+//   .create__main_button2 {
+//     background-image: linear-gradient(to right, #1CD8D2 0%, #93EDC7  51%, #1CD8D2  100%);
+//     margin: 10px;
+//     padding: 15px 45px;
+//     text-align: center;
+//     text-transform: uppercase;
+//     transition: 0.5s;
+//     background-size: 200% auto;
+//     color: white;            
+//     box-shadow: 0 0 20px #eee;
+//     border-radius: 10px;
+//     display: block;
+//   }
+
+//   .create__main_button2:hover {
+//     background-position: right center; /* change the direction of the change here */
+//     color: #fff;
+//     text-decoration: none;
+//   }

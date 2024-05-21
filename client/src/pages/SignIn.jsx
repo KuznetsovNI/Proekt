@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import style from "./style.module.scss";
+import style from "../pages/css/style.module.scss";
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -25,8 +25,10 @@ export default function SignIn() {
   });
 
   return (
-    <form onSubmit={handleSubmit(handleSignIn)} className={style.wrapper}>
-      <h2>Войти в аккаунт</h2>
+    <form onSubmit={handleSubmit(handleSignIn)}>
+      <div className={style.login}>
+      <h2 className={style.login__bigName}>Войти в аккаунт</h2>
+      <div className={style.login__name}>
       <Field
         name="userName"
         register={register}
@@ -35,6 +37,8 @@ export default function SignIn() {
         error={Boolean(errors.userName)}
         helperText={errors.userName?.message}
       />
+      </div>
+      <div className={style.login__name}>
       <Field
         name="password"
         register={register}
@@ -43,9 +47,13 @@ export default function SignIn() {
         error={Boolean(errors.password)}
         helperText={errors.password?.message}
       />
+      </div>
+      <div className={style.login__name}>
       <Button disabled={isSubmitting} type="submit">
         Войти
       </Button>
+      </div>
+      </div>
     </form>
   );
 }

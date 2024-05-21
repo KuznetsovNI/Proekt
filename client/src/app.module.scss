@@ -8,16 +8,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   position: relative;
-  overflow:scroll;
 }
 
 .nav {
-  position: absolute;
+  justify-content: center;
   display: flex;
   gap: 15px;
-  top: 10px;
+  padding-top: 20px;
 }
 
 .centered {

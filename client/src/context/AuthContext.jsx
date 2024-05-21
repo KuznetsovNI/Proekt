@@ -1,6 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 import axios from "axios";
 
+
 import inMemoryJWT from "../services/inMemoryJWT";
 import config from "../config";
 import style from "../app.module.scss";
@@ -37,6 +38,17 @@ const AuthProvider = ({ children }) => {
   const [isUserLogged, setIsUserLogged] = useState(false);
   const [data, setData] = useState();
 
+  const [currentUser] = useState(
+    JSON.parse(localStorage.getItem("user")) || null
+  );
+
+
+  useEffect(() => {
+    localStorage.setItem("user", JSON.stringify(currentUser));
+  }, [currentUser]);
+
+
+
   const handleFetchProtected = () => {
     ResourceClient.get("/protected")
       .then((res) => {
@@ -46,6 +58,7 @@ const AuthProvider = ({ children }) => {
   };
 
   const handleLogOut = () => {
+
     AuthClient.post("/logout")
       .then(() => {
         setIsUserLogged(false);
